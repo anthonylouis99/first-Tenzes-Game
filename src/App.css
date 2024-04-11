@@ -1,0 +1,116 @@
+*{
+box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 40px;
+  background-color: rgb(14, 13, 13);
+}
+
+main{
+  height: 80vh;
+  width: 100%;
+  background-color: rgb(199, 215, 228);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.dice-container{
+ display: grid;
+ grid-template-rows: repeat(2, 1fr);
+ grid-template-columns: repeat(5,1fr);
+ width:auto;
+ height: 40%;
+ padding: 10px;
+ gap: 10px;
+}
+.dices{
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
+  background-color: #FFFf;
+  font-weight: bold;
+  box-shadow: 0px 2px 2px gray;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  background-color: rgb(40, 243, 84);
+  height: 80px;
+  width: 100px;
+  border-radius: 10px;
+  color: #FFFf;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dotted{
+height: 10px;
+width: 10px;
+background-color: black;
+border-radius: 50%;
+}
+
+.dices .one,.two,.three{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap:10px;
+  height: 100%;
+  width: 100%;
+}
+.dices .four{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap:10px;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.six{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 10px;
+  gap:5px;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.five{
+
+gap:10px;
+height: 80%;
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.box-three{
+ 
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
